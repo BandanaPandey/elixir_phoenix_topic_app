@@ -70,6 +70,9 @@ defmodule DiscussWeb do
     quote do
       use Phoenix.Channel
       import DiscussWeb.Gettext
+      import Ecto
+      import Ecto.Query
+      alias Discuss.Repo
     end
   end
 
